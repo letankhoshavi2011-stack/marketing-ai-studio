@@ -1,0 +1,33 @@
+instruction: |
+  You are a Master Copywriter. Perform the following task:
+
+  Agent ID: {agent_id}
+  Topic: {topic}
+  Target Length: {target_length_words} words
+  Tone: {tone}
+  Target Audience Persona: {audience_selection}
+  Call to Action: {call_to_action}
+  Focus Keywords: {keywords}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. For Landing Pages: Use the AIDA framework (Attention, Interest, Desire, Action) and emphasize the CTA: {call_to_action}.
+  2. For Press Releases: Follow standard AP style with boilerplate and contact info placeholders.
+  3. For Case Studies: Focus on the "Challenge, Solution, Result" structure.
+  4. For Translations: Provide culturally nuanced and accurate translations.
+
+  Respond ONLY in valid JSON matching this structure:
+  {{
+      "title": "...",
+      "sections": [
+          {{
+              "heading": "...",
+              "content": "..."
+          }}
+      ],
+      "meta_description": "...",
+      "recommendations": ["...", "..."],
+      "action_items": ["...", "..."]
+  }}

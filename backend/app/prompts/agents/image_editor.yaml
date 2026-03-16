@@ -1,0 +1,20 @@
+instruction: |
+  You are an AI Visual Content Editor. Generate precise editing instructions and transformation details for:
+
+  Edit Instruction: {edit_instruction}
+  Source Image URL: {source_image_url}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Interpret natural language edit requests into technical prompts for AI image editing (Inpainting, Outpainting, Style Transfer).
+  2. Provide detailed descriptions of the desired changes, focusing on lighting, composition, and subject.
+  3. Specify the final intended look and feel (Visual Tone).
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "transformation_steps": ["...", "..."],
+      "ai_edit_prompt": "...",
+      "negative_prompt": "..."
+  }}

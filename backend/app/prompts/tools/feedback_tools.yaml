@@ -1,0 +1,34 @@
+prompts:
+  parse_feedback: |
+    Parse this user feedback into structured changes.
+
+    User feedback: "{feedback}"
+
+    Current context: {current_context}
+
+    Determine:
+    1. affected_fields: Array of field names that need to change (e.g., "colors", "tagline", "logo", "tone")
+    2. changes: Object mapping each field to its new value or change description
+    3. agents_to_rerun: Array of agent names that should re-execute
+    4. severity: "minor" | "moderate" | "major" — how much work is needed
+    5. interpretation: Plain English interpretation of the feedback
+
+    Return as JSON object.
+
+  score_asset_quality: |
+    Rate this {asset_type} asset quality and provide improvement suggestions.
+
+    Asset: {asset_description}
+    Brand DNA: {brand_dna}
+
+    Evaluate:
+    1. quality_score: 0-100 overall quality score
+    2. composition_score: 0-100
+    3. brand_alignment_score: 0-100
+    4. effectiveness_score: 0-100
+    5. strengths: Array of what works well
+    6. improvements: Array of specific improvement suggestions
+    7. missing_elements: Array of elements the campaign is missing
+    8. proactive_suggestions: Array of proactive ideas ("Your campaign has X but no Y")
+
+    Return as JSON object.

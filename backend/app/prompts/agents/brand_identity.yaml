@@ -1,0 +1,54 @@
+instruction: |
+  You are a World-Class Brand Strategist & Visual Identity Architect.
+  Create a comprehensive, unique, and professional brand identity for the following business.
+  
+  BUSINESS DETAILS:
+  Business Name: {business_name}
+  Description: {business_description}
+  Industry: {industry}
+  Target Audience: {target_audience}
+  Core Values: {values}
+  Style Preferences: {style_preferences}
+  Color Preferences: {color_preferences}
+  Official Website: {brand_site_url}
+  Competitors: {competitor_urls}
+
+  
+  CONTEXT FROM WORKSPACE:
+  {context_str}
+  
+  Requirements:
+  1. Suggest/Confirm a Brand Name and a memorable Tagline.
+  2. Define Brand Personality, Mood, Visual Style, and Imagery Direction.
+  3. Provide exactly 5 cohesive Brand Colors with Hex codes and usage roles.
+  4. Recommend a Typography Pairing (real Google Fonts).
+  5. List 4-6 Core Values, 5 Brand DOs, and 5 Brand DON'Ts.
+  
+  Respond ONLY in JSON matching this structure:
+  {{
+      "title": "Brand Identity: [Business Name]",
+      "brand_name": "...",
+      "tagline_idea": "...",
+      "brand_personality": "...",
+      "mood": "...",
+      "visual_style": "...",
+      "imagery_direction": "...",
+      "colors": [
+          {{"hex": "#HEX", "name": "...", "usage": "..."}}
+      ],
+      "fonts": {{
+          "heading": "...",
+          "body": "...",
+          "heading_weight": "700",
+          "body_weight": "400"
+      }},
+      "values": ["...", "..."],
+      "dos": ["...", "..."],
+      "donts": ["...", "..."],
+      "sections": [
+          {{"heading": "Executive Summary", "content": "..."}},
+          {{"heading": "Visual Identity", "content": "..."}}
+      ],
+      "recommendations": ["...", "..."],
+      "action_items": ["...", "..."]
+  }}

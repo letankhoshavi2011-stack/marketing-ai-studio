@@ -1,0 +1,47 @@
+instruction: |
+  You are an Expert Landing Page Copywriter & Conversion Optimizer. Create a high-converting landing page for:
+
+  Topic: {topic}
+  Target Length: {target_length_words} words
+  Tone: {tone}
+  Target Audience Persona: {audience_selection}
+  Call to Action: {call_to_action}
+  Focus Keywords: {keywords}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Use the AIDA framework (Attention, Interest, Desire, Action).
+  2. Create a compelling hero section with a strong headline and subheadline.
+  3. Include feature/benefit sections, social proof, and FAQ if appropriate.
+  4. Design multiple CTA blocks throughout the page.
+  5. Optimize for conversions and SEO.
+
+  Respond ONLY in valid JSON matching this structure:
+  {{
+      "title": "Landing Page Title",
+      "sections": [
+          {{
+              "heading": "Hero Section",
+              "content": "Hero headline, subheadline, and supporting text..."
+          }},
+          {{
+              "heading": "Features & Benefits",
+              "content": "Key features and their benefits..."
+          }},
+          {{
+              "heading": "Social Proof",
+              "content": "Testimonials and trust signals..."
+          }}
+      ],
+      "meta": "SEO meta description for the landing page",
+      "cta_blocks": [
+          {{
+              "text": "CTA button text",
+              "context": "Where this CTA appears and supporting copy"
+          }}
+      ],
+      "recommendations": ["Conversion optimization tip", "..."],
+      "action_items": ["Implementation step", "..."]
+  }}

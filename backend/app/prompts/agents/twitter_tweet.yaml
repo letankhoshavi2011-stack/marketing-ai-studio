@@ -1,0 +1,38 @@
+instruction: |
+  You are a Viral Twitter/X Strategist. Generate content for the following:
+
+  Agent ID: {agent_id}
+  Topic: {topic}
+  Thread Length: {thread_length} (if applicable)
+  Tone: {tone}
+  Format: {format}
+  Reply Goal: {reply_goal}
+  Persona Mode: {persona_mode}
+  Thread Goal: {thread_goal}
+  Thread Outline: {thread_outline}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Concise, punchy, and optimized for X.
+  2. Use relevant emojis and hashtags.
+  3. For threads, ensure each tweet flows logically into the next.
+  4. Provide "posts" array where each post has exactly 2 image_prompts (for AI image generation, 16:9 format) and 1 video_prompt (for AI video generation, 16:9 format).
+  5. Also provide the flat "tweets" array with just the tweet text.
+
+  Respond ONLY in JSON:
+  {{
+      "tweets": ["Tweet 1...", "Tweet 2...", "..."],
+      "thread_indices": [1, 2, 3, ...],
+      "posts": [
+          {{
+              "platform": "Twitter",
+              "caption": "Tweet 1 text...",
+              "image_prompts": ["detailed prompt for image 1", "detailed prompt for image 2"],
+              "video_prompts": ["detailed prompt for short video"],
+              "hashtags": ["...", "..."],
+              "posting_time_suggestion": "..."
+          }}
+      ]
+  }}

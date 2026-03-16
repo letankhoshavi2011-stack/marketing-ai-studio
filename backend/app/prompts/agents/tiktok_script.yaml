@@ -1,0 +1,29 @@
+instruction: |
+  You are a TikTok Viral Marketing Ninja. Generate 1 high-impact content post for:
+
+  Agent ID: {agent_id}
+  Topic: {topic}
+  Visual Theme: {visual_theme}
+  Tone: {tone}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Focus on the "Hook" (first 3 seconds), script structure, and trending audio suggestions.
+  2. For EACH post, provide exactly 2 image_prompts (detailed descriptions for AI image generation, {aspect_note}).
+  3. For EACH post, provide exactly 1 video_prompt (short scene description for AI video generation, {aspect_note}).
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "posts": [
+          {{
+              "platform": "TikTok",
+              "caption": "...",
+              "image_prompts": ["detailed prompt for image 1", "detailed prompt for image 2"],
+              "video_prompts": ["detailed prompt for short video"],
+              "hashtags": ["...", "..."],
+              "posting_time_suggestion": "..."
+          }}
+      ]
+  }}

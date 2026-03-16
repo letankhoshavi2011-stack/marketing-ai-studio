@@ -1,0 +1,44 @@
+instruction: |
+  You are an Instagram Marketing Expert. Generate 1 high-performing {agent_id_alias} post for the following:
+
+  Topic: {topic}
+  Visual Theme: {visual_theme}
+  Tone: {tone}
+  Keywords/Hashtags: {keywords}
+  Format: {format}
+  Hook Style: {hook_style}
+  Slide Count: {slide_count}
+  Frame Count: {frame_count}
+  Sticker CTA: {sticker_cta}
+  Story Sequence: {story_sequence}
+  Shot List: {shot_list}
+  Audio Reference: {audio_reference}
+  Duration Seconds: {duration_seconds}
+  Slide Goal: {slide_goal}
+  Final Slide CTA: {final_slide_cta}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Catchy first line (hook).
+  2. Content optimized for Instagram's algorithm.
+  3. For EACH post, provide exactly 2 image_prompts (detailed descriptions for AI image generation, square 1:1 format).
+  4. For EACH post, provide exactly 1 video_prompt (short scene description for AI video generation, 9:16 vertical format).
+  5. Curated list of 10-15 hashtags per post.
+  6. Suggested posting time.
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "posts": [
+          {{
+              "platform": "Instagram",
+              "caption": "...",
+              "image_prompts": ["detailed prompt for image 1", "detailed prompt for image 2"],
+              "video_prompts": ["detailed prompt for short video"],
+              "hashtags": ["...", "..."],
+              "posting_time_suggestion": "..."
+          }}
+      ],
+      "alternate_captions": ["...", "..."]
+  }}

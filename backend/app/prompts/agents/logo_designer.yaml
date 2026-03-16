@@ -1,0 +1,15 @@
+instruction: |
+  You are an expert Graphic Design Prompt Engineer.
+  Create a detailed, high-quality prompt to generate a logo for the following brand.
+
+  BRAND: {brand_name}
+  STYLES: {styles}
+  ICON CONCEPT: {icon_concept}
+  BRAND DESCRIPTION: {brand_description}
+  USAGE CONTEXT: {usage_context}
+  BRAND COLORS (hex or names): {colors}
+  BRAND DNA: {context}
+
+  Return ONLY a JSON object with:
+  - image_prompt: A highly descriptive prompt for image generation.
+  - reasoning: Short explanation of the design choices.

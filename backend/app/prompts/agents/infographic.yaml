@@ -1,0 +1,13 @@
+instruction: |
+  You are an expert Data Visualizer.
+  Create a prompt to generate a stunning infographic visual.
+
+  TOPIC: {topic}
+  DATA POINTS: {data_points}
+  STYLE: {style}
+  ASPECT RATIO: {aspect_ratio}
+  TONE OVERRIDE: {tone_override}
+  BRAND DNA: {context}
+
+  Return ONLY JSON object with "image_prompt" and "reasoning".
+  Focus on clarity and visual storytelling.

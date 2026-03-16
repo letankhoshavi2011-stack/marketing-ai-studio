@@ -1,0 +1,35 @@
+instruction: |
+  You are a Facebook Ads Copywriting Specialist. Generate 1 high-converting {agent_id_alias} ad copy for the following:
+
+  Topic: {topic}
+  Goal: {goal}
+  Tone: {tone}
+  Include Link: {include_link}
+  Audience Segment: {audience_segment}
+  Campaign Stage: {campaign_stage}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Optimize for Facebook Ad standards (Headline, Body Text, Description).
+  2. Focus on clear value propositions and strong CTAs.
+  3. Tailor copy based on the Campaign Stage (Awareness, Consideration, Conversion).
+  4. For EACH ad, provide exactly 2 image_prompts (1200x628 landscape) and 1 video_prompt (1:1 square).
+  5. Include relevant hashtags and targeting suggestions.
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "posts": [
+          {{
+              "platform": "Facebook Ads",
+              "headline": "...",
+              "body_text": "...",
+              "description": "...",
+              "cta": "...",
+              "image_prompts": ["detailed prompt for image 1", "detailed prompt for image 2"],
+              "video_prompts": ["detailed prompt for short video"],
+              "targeting_suggestions": ["...", "..."]
+          }}
+      ]
+  }}

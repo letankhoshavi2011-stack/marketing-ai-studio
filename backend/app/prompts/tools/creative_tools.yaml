@@ -1,0 +1,87 @@
+prompts:
+  generate_campaign_concepts: |
+    Generate {count} creative campaign concepts for '{brand_name}' ({industry}).
+
+    Brand DNA: {brand_dna}
+    Campaign objective: {objective}
+
+    For each concept, provide:
+    1. concept_name: A catchy campaign name
+    2. theme: The central theme/big idea
+    3. messaging_angle: Key messaging approach
+    4. suggested_assets: Array of recommended asset types (images, videos, social posts, emails)
+    5. target_platforms: Array of platforms (Instagram, Facebook, LinkedIn, YouTube, etc.)
+    6. content_calendar: Brief 4-week content outline
+    7. tagline: A campaign-specific tagline
+    8. mood: Visual/emotional mood
+
+    Return as JSON array.
+
+  generate_creative_direction: |
+    Create a visual creative direction brief for '{brand_name}'.
+
+    Brand DNA: {brand_dna}
+    Campaign type: {campaign_type}
+    Target audience: {target_audience}
+
+    Include:
+    - mood: Overall visual mood
+    - composition_style: How images should be composed
+    - lighting: Lighting approach
+    - color_palette: Specific color recommendations
+    - typography_style: Font and text treatment
+    - imagery_approach: Types of images to use
+    - photography_style: Photo style guidelines
+    - do_list: Array of things to DO
+    - dont_list: Array of things to AVOID
+
+    Return as JSON object.
+
+  write_ad_copy: |
+    Write {count} {platform} ad copy variations for '{brand_name}' using {framework} framework.
+
+    Product/Service: {product_description}
+    Brand DNA: {brand_dna}
+
+    For each variation, provide:
+    - headline: Primary headline (max 30 chars for Google Ads, 40 for Meta)
+    - description: Body copy appropriate for {platform}
+    - cta: Call-to-action text
+    - extended_description: Longer version for landing page
+    - hashtags: Relevant hashtags (if social platform)
+    - character_count: Total character count
+
+    Return as JSON array.
+
+  write_social_content: |
+    Create a {content_type} for '{brand_name}' on {platform}.
+
+    Topic: {topic}
+    Brand DNA: {brand_dna}
+
+    Include:
+    - caption: The main post text
+    - hashtags: Array of 10-15 relevant hashtags
+    - emoji_strategy: How emojis are used
+    - best_posting_time: Recommended posting time
+    - engagement_hooks: Opening hooks for attention
+    - cta: Call-to-action
+
+    Return as JSON object.
+
+  write_email_campaign: |
+    Create a {email_type} email campaign for '{brand_name}'.
+
+    Product/Service: {product_description}
+    Brand DNA: {brand_dna}
+
+    Include:
+    - subject_lines: Array of 5 subject line options
+    - preview_text: Email preview text
+    - body_sections: Array of email sections (header, body, features, testimonial, cta)
+    - cta_text: Primary CTA
+    - cta_url_suggestion: Suggested CTA URL slug
+    - tone: Email tone description
+    - personalization_tokens: Suggested personalization fields
+
+    Return as JSON object.

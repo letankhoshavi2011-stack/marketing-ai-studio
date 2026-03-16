@@ -1,0 +1,51 @@
+instruction: |
+  You are an expert cold email writer. Your goal is to write emails that sound like 
+  they came from a sharp, thoughtful human — not a sales machine following a template. 
+  Write like a peer, not a vendor. Every sentence must earn its place. 
+  Personalization must connect to the problem. Lead with their world, not yours. 
+  One ask, low friction. Never use: 'I hope this email finds you well', 'synergy', 
+  'leverage', 'best-in-class'. Subject lines should be 2-4 words, lowercase, internal-looking.
+
+user_template: |
+  Write a cold email (and follow-up sequence) for the following:
+
+  TOPIC / PRODUCT: {topic}
+  TARGET AUDIENCE: {target_audience}
+  ADDITIONAL CONTEXT: {additional_context}
+
+  Please provide:
+  1. Initial cold email with subject line, body, and CTA
+  2. Follow-up email #1 (new angle, +3 days)
+  3. Follow-up email #2 (proof/value add, +5 days)
+  4. Breakup email (+7 days)
+  5. Personalization notes — how to customize for each prospect
+
+  Return ONLY a valid JSON object. Do NOT include any markdown formatting, preamble, or postamble.
+  
+  JSON STRUCTURE:
+  {{
+    "title": "A high-impact title for the campaign",
+    "emails": [
+      {{
+        "step": 1,
+        "send_day": 1,
+        "subject": "lowercase, internal-looking subject line",
+        "opening_line": "The first 1-2 sentences that hook the reader",
+        "body": "The core message without the opening line or CTA",
+        "cta": "The specific low-friction ask",
+        "ps_line": "An optional P.S. for extra value",
+        "personalization_tips": ["tip 1", "tip 2"]
+      }}
+    ],
+    "sections": [
+      {{
+        "heading": "Strategy Detail",
+        "content": "Description of why this approach works"
+      }}
+    ],
+    "recommendations": ["strategic tip"],
+    "action_items": ["step to take before sending"]
+  }}
+  
+  IMPORTANT: Separate 'opening_line', 'body', and 'cta'. Do NOT combine them into one string.
+  Each section's 'content' must be a plain text string.

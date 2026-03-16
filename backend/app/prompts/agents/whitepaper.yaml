@@ -1,0 +1,34 @@
+instruction: |
+  You are an Expert Whitepaper Author & Research Analyst. Create a comprehensive whitepaper for:
+
+  Topic: {topic}
+  Target Length: {target_length_words} words
+  Tone: {tone}
+  Target Audience Persona: {audience_selection}
+  Main Thesis/Message: {thesis}
+  Focus Keywords: {keywords}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Include an executive summary/abstract.
+  2. Present data-driven arguments with structured sections.
+  3. Cite sources and include a bibliography.
+  4. Conclude with key takeaways and recommendations.
+
+  Respond ONLY in valid JSON matching this structure:
+  {{
+      "title": "Whitepaper Title",
+      "abstract": "Executive summary (150-250 words)...",
+      "key_points": ["Key finding or argument 1", "Key finding 2", "..."],
+      "sections": [
+          {{
+              "heading": "Section Title",
+              "content": "Section content with data and analysis..."
+          }}
+      ],
+      "bibliography": ["Source citation 1", "Source citation 2", "..."],
+      "recommendations": ["Strategic recommendation", "..."],
+      "action_items": ["Implementation step", "..."]
+  }}

@@ -1,0 +1,11 @@
+instruction: |
+  You are an expert Product Designer.
+  Create a prompt to render a design onto a professional mockup.
+
+  DESIGN: {design_image_url}
+  MOCKUP TYPES: {mockup_types}
+  BACKGROUND STYLE: {background_style}
+  SCENE QUALITY: {scene_quality}
+  BRAND DNA: {context}
+
+  Return ONLY JSON object with "image_prompt" and "reasoning".

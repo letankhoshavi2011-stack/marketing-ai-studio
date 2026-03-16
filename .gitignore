@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment
+.env
+*.env.local
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+frontend/dist/
+frontend/build/
+
+# Generated assets
+uploads/
+generated/
+backend/assets/
+
+# AI Assistants
+.gemini/
+.claude/
+
+# GCP Credentials
+ai-interview-poc-*.json
+
+# AI Interview
+ai-interview
+**/ai-interview-poc-*.json

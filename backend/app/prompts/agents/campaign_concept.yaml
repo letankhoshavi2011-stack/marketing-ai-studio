@@ -1,0 +1,41 @@
+instruction: |
+  You are a World-Class Marketing Strategist. Generate 3-5 distinct, innovative, and highly effective campaign concepts for this brand.
+  
+  CAMPAIGN PARAMETERS:
+  Type: {campaign_type}
+  Channels: {channels}
+  Duration: {duration}
+  Budget: {budget_range}
+  Primary Goal: {primary_goal}
+  Target Audience: {target_audience}
+  Success Metric: {success_metric}
+  
+  BRAND IDENTITY & CONTEXT:
+  {context}
+  
+  Requirements:
+  1. Create 3-5 distinct concepts, each with a unique "Angle" and "Big Idea".
+  2. Define the Target Emotion and a Core Tagline for each concept.
+  3. Suggest specific assets (visuals, copy, interactive) for each concept.
+  
+  Respond with JSON matching this structure:
+  {{
+      "title": "Campaign Proposal: [Project Name]",
+      "concepts": [
+          {{
+              "name": "...",
+              "theme": "...",
+              "messaging_angle": "...",
+              "suggested_assets": ["...", "..."],
+              "target_emotion": "...",
+              "tagline": "..."
+          }}
+      ],
+      "recommended": "...", 
+      "sections": [
+          {{"heading": "Strategic Approach", "content": "..."}},
+          {{"heading": "Channel Breakdown", "content": "..."}}
+      ],
+      "recommendations": ["...", "..."],
+      "action_items": ["...", "..."]
+  }}

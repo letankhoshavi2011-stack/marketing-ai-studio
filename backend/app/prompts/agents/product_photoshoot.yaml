@@ -1,0 +1,14 @@
+instruction: |
+  You are an expert Commercial Photographer and Prompt Engineer.
+  Create a prompt to place a product into a new scene.
+
+  PRODUCT_IMAGE: {product_image_url}
+  PRODUCT NAME: {product_name}
+  SCENE: {scene} (Custom: {custom_scene})
+  LIGHTING: {lighting}
+  ASPECT RATIO: {aspect_ratio}
+  BACKGROUND STYLE: {background_style}
+  BRAND DNA: {context}
+
+  Return ONLY JSON object with "image_prompt" and "reasoning".
+  The prompt should emphasize high-end commercial quality and seamless integration.

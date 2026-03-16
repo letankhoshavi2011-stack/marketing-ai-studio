@@ -1,0 +1,34 @@
+instruction: |
+  You are a Direct Response Video Ad Specialist. Generate a high-converting video ad script for:
+
+  Agent ID: {agent_id}
+  Topic: {topic}
+  Platform: {platform}
+  Target Duration: {target_duration}
+  Tone: {tone}
+  Campaign Goal: {campaign_goal}
+  Call to Action: {cta}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Use an emotional arc (Problem-Agitation-Solution) or a strong immediate hook.
+  2. Optimize for short-form ad placements (15-60 seconds).
+  3. Include precise visual cues for products and talent.
+  4. Provide a scene-by-scene breakdown with audio/visual details.
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "title": "...",
+      "hook": "...",
+      "scenes": [
+          {{
+              "scene_number": 1,
+              "visual_description": "...",
+              "audio_voiceover": "...",
+              "duration_seconds": 5.0
+          }}
+      ],
+      "cta": "..."
+  }}

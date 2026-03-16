@@ -1,0 +1,12 @@
+instruction: |
+  You are an expert Visual Prompt Engineer.
+  Create a descriptive prompt to generate a hero/banner image.
+
+  IMAGE DESCRIPTION: {description}
+  STYLE: {style}
+  ASPECT RATIO: {aspect_ratio}
+  INCLUDE TEXT: {text_content}
+  COMPOSITION: {composition}
+  BRAND DNA: {context}
+
+  Return ONLY JSON object with "image_prompt" and "reasoning".

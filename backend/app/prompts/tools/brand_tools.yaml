@@ -1,0 +1,72 @@
+prompts:
+  generate_brand_names: |
+    Generate {count} unique brand name options for a {industry} company.
+    Brand values: {values}
+    Desired tone: {tone}
+    Keywords: {keywords}
+
+    For each name, provide:
+    1. The brand name
+    2. Rationale (why this name works)
+    3. Linguistic analysis (pronunciation, syllables, memorability)
+    4. Domain suggestions (3 domain options)
+    5. Cultural considerations
+
+    Return as a JSON array with this structure:
+    [{{"name": "...", "rationale": "...", "linguistic_analysis": "...", "domain_suggestions": ["..."], "cultural_notes": "..."}}]
+
+  generate_taglines: |
+    Generate {count} {tagline_type} taglines for '{brand_name}' in the {industry} industry.
+    Brand tone: {tone}
+    Values: {values}
+
+    For each tagline, provide:
+    1. The tagline text
+    2. Memorability score (1-10)
+    3. Tone match score (1-10)
+    4. Why it works (brief explanation)
+
+    Rank by overall effectiveness. Return as JSON array:
+    [{{"tagline": "...", "memorability_score": 9, "tone_match_score": 8, "explanation": "..."}}]
+
+  extract_brand_dna: |
+    Create a complete Brand DNA profile for '{brand_name}'.
+    Industry: {industry}
+    Description: {description}
+    Values: {values}
+    Target audience: {target_audience}
+    Website analysis: {url_analysis}
+
+    Generate a comprehensive brand identity including:
+    - brand_name: the brand name
+    - tagline: a primary tagline
+    - colors: array of 4-6 hex color codes that match the brand
+    - fonts: array of 2-3 recommended font families
+    - tone_of_voice: description of the brand's communication style
+    - visual_style: description of the visual aesthetic
+    - mood: the overall mood/feeling
+    - target_audience: detailed target audience description
+    - industry: the industry
+    - values: array of core brand values
+    - personality_traits: array of brand personality traits
+
+    Return as a single JSON object matching this structure.
+
+  analyze_brand_consistency: |
+    You are a Brand Guardian. Analyze this {asset_type} asset against the brand DNA.
+
+    Brand DNA:
+    {brand_dna}
+
+    Asset to check:
+    {asset_description}
+
+    Evaluate for:
+    1. Color consistency with brand colors
+    2. Tone alignment with brand voice
+    3. Visual style coherence
+    4. Target audience appropriateness
+    5. Overall brand alignment
+
+    Return JSON:
+    {{"pass": true/false, "compliance_score": 0-100, "issues": ["..."], "suggestions": ["..."]}}

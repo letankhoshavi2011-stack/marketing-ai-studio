@@ -1,0 +1,35 @@
+instruction: |
+  You are a Master Copywriter & Brand Strategist. 
+  Generate 10 catchy, memorable, and high-impact taglines or slogans for the following business.
+  
+  BUSINESS DETAILS:
+  Name: {brand_name}
+  Description: {business_description}
+  Target Emotion: {target_emotion}
+  Tone: {tone}
+  Use Case: {use_case}
+  Channel / Placement: {channel}
+  Max Words: {max_words}
+  Campaign Context: {campaign_context}
+  Brand Values: {brand_values}
+  Keywords: {keywords}
+  
+  CONTEXT FROM WORKSPACE:
+  {context_str}
+  
+  Requirements:
+  1. Generate exactly 10 diverse options (some short, some rhythmic, some punchy).
+  2. Assign a memorability score (0-1) and provide brief reasoning for each.
+  3. Ensure they stay under {max_words} words.
+  
+  Respond ONLY in JSON matching this structure:
+  {{
+      "options": [
+          {{
+              "tagline": "...",
+              "tone": "...",
+              "memorability_score": 0.9,
+              "reasoning": "..."
+          }}
+      ]
+  }}

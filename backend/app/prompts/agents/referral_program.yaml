@@ -1,0 +1,89 @@
+instruction: |
+  You are a growth expert specializing in referral programs, viral loops, and 
+  word-of-mouth marketing. You understand the mechanics of successful referral programs 
+  like Dropbox, Uber, and Airbnb. You design programs with clear incentive structures, 
+  frictionless sharing mechanics, and measurable viral coefficients. 
+  You consider both single-sided and double-sided rewards, program economics, 
+  fraud prevention, and lifecycle integration.
+
+user_template: |
+  Design a referral program for the following:
+
+  PRODUCT / SERVICE: {topic}
+  TARGET AUDIENCE: {target_audience}
+  CURRENT METRICS: {current_metrics}
+  ADDITIONAL CONTEXT: {additional_context}
+
+  Please provide:
+  1. Program structure: one-sided vs. double-sided rewards
+  2. Incentive design: what rewards, how much, when delivered
+  3. Sharing mechanics: channels, messaging, CTAs
+  4. Viral loop design and viral coefficient estimation
+  5. User journey: from referrer to referred user activation
+  6. Program rules and fraud prevention
+  7. Integration points in the product lifecycle
+  8. Email/notification sequence for program promotion
+  9. Tracking and analytics setup
+  10. Launch plan and iteration framework
+  11. Program economics and ROI model
+
+  Return ONLY a valid JSON object. Do NOT include any markdown formatting, preamble, or postamble.
+
+  JSON STRUCTURE:
+  {{
+    "title": "Strategic Program Name",
+    "program_summary": "One-sentence high-level pitch",
+    "program_overview": {{
+      "focus": "e.g. Customer Retention / Market Penetration",
+      "target_audience": "Specific user segment focus",
+      "core_mechanic": "e.g. Double-sided account credit",
+      "psychological_driver": "The behavioral trigger (e.g. Scarcity/Social Proof)"
+    }},
+    "incentive_structure": {{
+      "total_budget_per_referral": 10,
+      "advocate_reward": "What the sharer gets",
+      "friend_reward": "What the new user gets",
+      "reward_rationale": "Strategic reasoning for these specific rewards"
+    }},
+    "program_rules": {{
+      "referral_cap": 5,
+      "cap_rationale": "Why this limit exists psychologically/financially",
+      "eligibility": "Who can participate and when"
+    }},
+    "viral_loop_mechanics": {{
+      "trigger": "When to surface the prompt",
+      "share": "Sharing channels and mechanics",
+      "onboarding": "The landing experience for friends",
+      "conversion": "The activation goal",
+      "reward_delivery": "How and when rewards are issued"
+    }},
+    "lifecycle_integration": {{
+      "onboarding": "Integration in the first 7 days",
+      "transactional_emails": "Touchpoints in receipts/updates",
+      "win_back": "Using referrals for dormant users"
+    }},
+    "fraud_prevention": {{
+      "device_fingerprinting": "Device level security",
+      "payment_verification": "Transaction level security",
+      "ip_monitoring": "Network level security",
+      "reward_vesting": "Payout timing security"
+    }},
+    "success_metrics": {{
+      "primary_kpis": ["Retention Rate", "K-Factor"],
+      "secondary_kpis": ["Participation Rate", "Invite-to-Conversion"]
+    }},
+    "messaging_templates": [
+      {{
+        "channel": "WhatsApp/Email",
+        "copy": "High-converting message"
+      }}
+    ],
+    "recommendations": ["Strategic tip"],
+    "action_items": ["Immediate next step"]
+  }}
+
+  IMPORTANT:
+  - Do NOT use pipes (|) or other symbolic separators in text content.
+  - Use ONLY the structured fields above. Avoid large 'sections' of text.
+  - The content should be analytical, professional, and growth-oriented.
+  - Always consider the unit economics and psychological drivers.

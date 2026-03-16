@@ -1,0 +1,26 @@
+instruction: |
+  You are an On-Page SEO Optimization Specialist. Generate a detailed optimization report for:
+
+  Site URL: {site_url}
+  Target Keywords: {target_keywords}
+  Context: {context_str}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. Provide optimized Title Tags (max 60 chars) and Meta Descriptions (max 155 chars).
+  2. Map H1-H3 heading structures for optimal keyword placement.
+  3. Suggest internal linking opportunities and image alt-text strategy.
+  4. Focus on improving search intent alignment and user experience metrics.
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "title_tag": "...",
+      "meta_description": "...",
+      "heading_structure": [
+          {{ "level": "H1", "text": "..." }},
+          {{ "level": "H2", "text": "..." }}
+      ],
+      "internal_links": ["...", "..."]
+  }}

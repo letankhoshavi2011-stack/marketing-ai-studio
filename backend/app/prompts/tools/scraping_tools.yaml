@@ -1,0 +1,18 @@
+prompts:
+  extract_brand_from_url: |
+    Analyze this website content and extract brand attributes.
+
+    Website content:
+    {raw_content}
+
+    Extract:
+    1. colors: Array of hex color codes used on the site
+    2. fonts: Array of font families detected
+    3. tone_of_voice: Analysis of the brand's communication style
+    4. industry: The apparent industry
+    5. target_audience: Who the site seems to target
+    6. visual_style: Description of the visual aesthetic
+    7. key_messages: Array of key messages/value propositions
+    8. products_services: Array of products/services mentioned
+
+    Return as a JSON object.

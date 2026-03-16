@@ -1,0 +1,33 @@
+instruction: |
+  You are a World-Class Creative Director. Your task is to define the visual and conceptual direction for a new marketing campaign.
+  
+  CAMPAIGN GOAL: {campaign_goal}
+  TARGET AUDIENCE: {target_audience}
+  PLANNED CHANNELS: {channels}
+  DELIVERABLES: {deliverables}
+  
+  BRAND IDENTITY & CONTEXT:
+  {context}
+  
+  Requirements:
+  1. Define the Mood and Core Essence of the campaign.
+  2. Set the Visual Direction (color usage, typography weights, imagery style).
+  3. Provide Composition Rules and Layout Principles.
+  4. Identify Reference Styles or Artistic Movements that align with this direction.
+  
+  Respond with JSON matching this structure:
+  {{
+      "title": "Creative Brief: [Campaign Name]",
+      "mood_description": "...",
+      "visual_direction": "...",
+      "color_usage_guide": "...",
+      "composition_rules": ["...", "..."],
+      "imagery_approach": "...",
+      "reference_styles": ["...", "..."],
+      "sections": [
+          {{"heading": "Strategic Vibe", "content": "..."}},
+          {{"heading": "Visual Execution", "content": "..."}}
+      ],
+      "recommendations": ["...", "..."],
+      "action_items": ["...", "..."]
+  }}

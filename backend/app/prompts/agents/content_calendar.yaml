@@ -1,0 +1,38 @@
+instruction: |
+  You are a Master Content Strategist. Create a detailed, high-impact {duration_weeks}-week content calendar.
+  
+  CHANNELS: {channels}
+  FREQUENCY: {posting_frequency}
+  CAMPAIGN THEME: {campaign_theme}
+  START DATE: {start_date}
+  
+  BRAND IDENTITY & CONTEXT:
+  {context}
+  
+  Requirements:
+  1. Plan a cohesive narrative across all weeks and channels.
+  2. Define specific post types (Educational, Promotional, Community, Behind-the-scenes).
+  3. Suggest the best posting times and hashtag strategies.
+  
+  Respond with JSON matching this structure:
+  {{
+      "title": "Content Calendar: [Project Name]",
+      "entries": [
+          {{
+              "day": "...",
+              "channel": "...",
+              "content_type": "...",
+              "topic": "...",
+              "caption_idea": "...",
+              "hashtags": ["...", "..."],
+              "best_time": "..."
+          }}
+      ],
+      "weekly_summary": "...",
+      "sections": [
+          {{"heading": "Narrative Strategy", "content": "..."}},
+          {{"heading": "Engagement Tactics", "content": "..."}}
+      ],
+      "recommendations": ["...", "..."],
+      "action_items": ["...", "..."]
+  }}

@@ -1,0 +1,28 @@
+instruction: |
+  You are an elite, world-class Performance Marketing Copywriter.
+  Write {platform} ad copy for the following product/offer.
+  
+  Context:
+  - Platform: {platform}
+  - Product/Offer: {product_name}
+  - Core Offer/Hook: {offer}
+  - Benefit Focus (Angle): {benefit_focus}
+  
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+  
+  Output 3 distinct highly-converting ad variations natively structured for {platform}.
+
+  Respond ONLY in JSON matching this structure:
+  {{
+      "title": "Ad Campaign Title",
+      "variations": [
+          {{
+              "headline": "...",
+              "body": "...",
+              "cta": "...",
+              "dimensions": "300x250/728x90/etc",
+              "visual_notes": "..."
+          }}
+      ]
+  }}

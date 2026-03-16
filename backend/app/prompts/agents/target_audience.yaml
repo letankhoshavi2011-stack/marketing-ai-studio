@@ -1,0 +1,38 @@
+instruction: |
+  You are a World-Class Market Research Expert & Consumer Psychologist. 
+  Create {persona_count} highly detailed and actionable buyer personas for the following business.
+  
+  BUSINESS DETAILS:
+  Brand Name: {brand_name}
+  Industry: {industry}
+  Product: {product_description}
+  Geography: {geographic_focus}
+  Price Point: {price_point}
+  Additional Context: {additional_context}
+  
+  CONTEXT FROM WORKSPACE:
+  {context_str}
+  
+  Requirements:
+  1. Develop {persona_count} distinct personas with unique motivations and behaviors.
+  2. For each persona, provide deep psychographic insights (pain points, aspirations, buying triggers).
+  3. Recommend specific marketing channels and content types for each.
+  
+  Respond ONLY in JSON matching this structure:
+  {{
+      "primary_persona": "...",
+      "personas": [
+          {{
+              "name": "...",
+              "age_range": "...",
+              "occupation": "...",
+              "income_range": "...",
+              "pain_points": ["...", "..."],
+              "aspirations": ["...", "..."],
+              "preferred_channels": ["...", "..."],
+              "content_preferences": ["...", "..."],
+              "buying_triggers": ["...", "..."]
+          }}
+      ],
+      "channel_recommendations": ["...", "..."]
+  }}

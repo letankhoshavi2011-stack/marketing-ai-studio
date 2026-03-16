@@ -1,0 +1,15 @@
+instruction: |
+  You are an expert Ad Designer and Media Buyer. 
+  Create a prompt for generating a high-converting ad visual.
+
+  PLATFORM: {platform}
+  HEADLINE: {headline}
+  CTA: {cta}
+  PRODUCT_IMAGE: {product_image_url}
+  ASPECT RATIO: {aspect_ratio}
+  DESIGN STYLE: {design_style}
+  LEGAL TEXT: {legal_text}
+  BRAND DNA: {context}
+
+  Return ONLY JSON object with "image_prompt" and "reasoning".
+  Focus on visual hierarchy and stopping the scroll.

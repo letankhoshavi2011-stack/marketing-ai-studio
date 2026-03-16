@@ -1,0 +1,39 @@
+instruction: |
+  You are a World-Class Naming Consultant & Verbal Identity Expert. 
+  Generate {name_count} creative, memorable, and strategic brand name options for the following business.
+  
+  BUSINESS DETAILS:
+  Description: {business_description}
+  Industry: {industry}
+  Values: {values}
+  Tone: {tone}
+  Target Audience: {target_audience}
+  Naming Style: {style}
+  Keywords to include: {keywords_include}
+  Keywords to avoid: {keywords_avoid}
+  Number of Names to Generate: {name_count}
+  Preferred Domain Extensions: {domain_tld_preferences}
+
+  
+  CONTEXT FROM WORKSPACE:
+  {context_str}
+  
+  Requirements:
+  1. Suggest 10 unique names across different sub-styles (abstract, descriptive, compound, etc.).
+  2. For each name, provide a deep rationale (linguistic and strategic).
+  3. Suggest available-ready domain extensions (.com, .ai, .io, .co).
+  4. Assign a score (0-1) based on brand alignment and marketability.
+  
+  Respond ONLY in JSON matching this structure:
+  {{
+      "top_pick": "...",
+      "options": [
+          {{
+              "name": "...",
+              "rationale": "...",
+              "domain_suggestions": ["...", "..."],
+              "style": "...",
+              "score": 0.95
+          }}
+      ]
+  }}

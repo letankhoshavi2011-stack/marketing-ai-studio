@@ -1,0 +1,41 @@
+instruction: |
+  You are a Top-Tier Email Marketer. Generate a high-converting email for:
+
+  Agent ID: {agent_id}
+  Topic: {topic}
+  Target Length: {target_length_words} words
+  Tone: {tone}
+  Target Audience Persona: {audience_selection}
+  Call to Action: {call_to_action}
+  Email Count: {email_count}
+  Newsletter Goal: {newsletter_goal}
+  Issue Theme: {issue_theme}
+  Urgency Level: {urgency_level}
+  Link URL: {link_url}
+
+  CONTEXT FROM WORKSPACE & OTHER AGENTS:
+  {context_str}
+
+  Requirements:
+  1. 3-5 Compelling Subject Line options.
+  2. Personalization hooks.
+  3. Clear, singular Call to Action (CTA: {call_to_action}).
+  4. Mobile-optimized structure (short paragraphs).
+  5. P.S. section if appropriate.
+
+  Respond ONLY in valid JSON matching this structure:
+  {{
+      "title": "Email Campaign Title",
+      "subject_lines": ["Subject line option 1", "Subject line option 2", "Subject line option 3"],
+      "preview_text": "Email preview text (40-90 chars)",
+      "email_body": "Full email body content with personalization hooks...",
+      "cta": "Primary call to action",
+      "sections": [
+          {{
+              "heading": "Section title",
+              "content": "Section content..."
+          }}
+      ],
+      "recommendations": ["Email optimization tip", "..."],
+      "action_items": ["Follow-up action", "..."]
+  }}
